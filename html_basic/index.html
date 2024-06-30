@@ -2,65 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Albert Sam - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <style>
+        body {
+          background-color: #f2f2f2;
+        }
+        h1 {
+          color: #00698f;
+        }
+      </style>      
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, article, footer {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        section {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tweets.html">Tweets</a></li>
-        </ul>
+        <h1>Albert Sam</h1>
+        <p>Accounts Management | Web Developer | Passionate about creating meaningful web experiences.</p>
     </header>
-    <main>
-        <article>
-            <h1>Welcome to My First Webpage</h1>
-            <p>This is the content of the homepage.</p>
-
-            <!-- Table of Learners -->
-            <section>
-                <h2>Table of Learners</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Country</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>John</td>
-                            <td>25</td>
-                            <td>USA</td>
-                        </tr>
-                        <tr>
-                            <td>Emily</td>
-                            <td>28</td>
-                            <td>Canada</td>
-                        </tr>
-                        <tr>
-                            <td>Michael</td>
-                            <td>32</td>
-                            <td>Australia</td>
-                        </tr>
-                        <tr>
-                            <td>Sophia</td>
-                            <td>21</td>
-                            <td>UK</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <!-- End Table of Learners -->
-
+    
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>I am a dedicated accounts management and web developer with a focus on front-end technologies. My goal is to combine my knowledge and skills in accounts management and software development to solve real-world problems.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <article class="project">
+            <h3>Project 1</h3>
+            <p>My not so funny tweet.</p>
+            <a href="tweets.html" target="_blank">Link to page</a>
         </article>
-        <aside>
-            <p>A table showing learners and their various countries.</p>
-        </aside>
-    </main>
+        
+        <article class="project">
+            <h3>Project 2</h3>
+            <p>My first try at html.</p>
+            <a href="base_index.html" target="_blank">Link to my first try at html</a>
+        </article>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I have a strong foundation in HTML, CSS, and accounting tools such as Tally, Quickbooks and GIFMIS. In my free time, I enjoy contributing to open-source projects and exploring new technologies.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aaasamuelsss@gmail.com">aaasamuelsss@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/albert-sam" target="_blank">https://www.linkedin.com/in/albert-sam/</a></p>
+        <p>GitHub: <a href="https://github.com/Abey-ku" target="_blank">https://github.com/dashboard</a></p>
+    </section>
+    
     <footer>
-        <p>Made by ALBERT SAM - <a href="https://www.linkedin.com/in/albert-sam/" target="_blank">here</a>.</p>
+        <p>&copy; 2024 Albert Sam</p>
     </footer>
+    
 </body>
 </html>
